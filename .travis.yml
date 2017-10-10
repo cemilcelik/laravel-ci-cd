@@ -9,3 +9,11 @@ before_script:
   - cp .env.example .env
   - composer install --dev --prefer-source --no-interaction
   - php artisan key:generate
+
+notifications:
+  email: 
+    recipients:
+      - cemilcelik84@gmail.com
+    on_success: always
+    on_failure: always
+    
